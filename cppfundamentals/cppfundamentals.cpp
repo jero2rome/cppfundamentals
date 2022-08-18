@@ -4,10 +4,36 @@ using namespace std;
 
 int main()
 {
+  // working with strings
+
+  string fullname;
+  cout << "Enter both your first name and last name: " << endl;
+  // ignore anything entered before user input, in this case endl.
+  cin.ignore();
+  // getline to read a line from the input stream
+  getline(cin, fullname);
+  cout << "Hi " << fullname << endl;
+
+  string name;
+  cout << name << endl;
+  cout << "Enter your name: ";
+  cin >> name;
+  cout << "Hi " << name << endl;
+
+  // working with characters
+
+  char ch = 'a';
+  cout << ch << endl;
+  cout << +ch << endl;
+
+  ch = 'b';
+  cout << +ch << endl;
+  ch = 98;
+  cout << ch << endl;
 
   // working with booleans
   bool isNewUser = false;
-  // sticky manipulator boolalpha to print "true" or "false" instead of "1" or "0"
+  // sticky manipulator boolalpha to print "true" or "false" instead of "1" or "0
   cout << boolalpha << isNewUser;
   cout << noboolalpha;
 
