@@ -4,6 +4,27 @@ using namespace std;
 
 int main()
 {
+  // Type conversion
+
+  int x = 1;
+  double y = 2.2;
+  double z = x + y;
+
+  cout << z << endl;
+
+  int dataLossZ = x + y;
+
+  cout << dataLossZ << endl;
+
+  y = 2.2;
+
+  int castedZ = x + static_cast<int>(y);
+  cout << castedZ;
+
+  int aX = 10;
+  int bY = 3;
+  double cZ = static_cast<double>(aX) + bY;
+
   // working with arrays
 
   int numbers[5]{};
@@ -16,7 +37,7 @@ int main()
   cout << otherNumbers[1] << endl;
   cout << otherNumbers[2] << endl;
 
-  int anotherNumbers[] = { 10, 20 };
+  int anotherNumbers[] = {10, 20};
 
   // will print garbage since anotherNumbers[2] is out of bounds
   cout << anotherNumbers[2] << endl;
