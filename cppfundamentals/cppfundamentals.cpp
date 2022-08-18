@@ -18,5 +18,10 @@ int main()
   cout << setw(10) << "Spring" << setw(10) << "Nice" << endl
     << setw(10) << "Summer" << setw(10) << "Hot";
 
+  // "<<" Stream insertion operator
+  // ">>" Stream extraction operator
+  cout << right;
+  cout << "Hello world" << endl;
+
   return 0;
 }
