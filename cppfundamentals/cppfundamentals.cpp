@@ -4,6 +4,15 @@ using namespace std;
 
 int main()
 {
+
+  // working with booleans
+  bool isNewUser = false;
+  // sticky manipulator boolalpha to print "true" or "false" instead of "1" or "0"
+  cout << boolalpha << isNewUser;
+  cout << noboolalpha;
+
+  cout << endl;
+
   // Data types size and limits
   int number = numeric_limits<int>::max();
   number++;
