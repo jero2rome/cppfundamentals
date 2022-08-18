@@ -4,6 +4,36 @@ using namespace std;
 
 int main()
 {
+  // working with arrays
+
+  int numbers[5]{};
+  cout << numbers[2] << endl;
+
+  // Still compiles and prints garbage if accessing out of bounds
+  cout << numbers[5] << endl;
+
+  int otherNumbers[5] = {10, 20};
+  cout << otherNumbers[1] << endl;
+  cout << otherNumbers[2] << endl;
+
+  int anotherNumbers[] = { 10, 20 };
+
+  // will print garbage since anotherNumbers[2] is out of bounds
+  cout << anotherNumbers[2] << endl;
+
+  string names[3];
+
+  cout << "Name 1:";
+  getline(cin, names[0]);
+
+  cout << "Name 2:";
+  getline(cin, names[1]);
+
+  cout << "Name 3:";
+  getline(cin, names[2]);
+
+  cout << names[0] << endl;
+
   // working with strings
 
   string fullname;
